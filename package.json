@@ -1,0 +1,42 @@
+{
+  "name": "tokensqueezer-mcp",
+  "version": "1.4.1",
+  "description": "Local MCP bridge for the TokenSqueezer Figma plugin — streams squeezed design context and W3C tokens to AI coding agents",
+  "license": "MIT",
+  "author": "Ufuk Aydin (https://ufukaydin.com)",
+  "type": "module",
+  "bin": {
+    "tokensqueezer-mcp": "dist/mcp-bridge.mjs"
+  },
+  "files": [
+    "dist/mcp-bridge.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "figma",
+    "mcp",
+    "model-context-protocol",
+    "tokensqueezer",
+    "design-tokens",
+    "ai",
+    "claude",
+    "cursor",
+    "antigravity"
+  ],
+  "homepage": "https://www.figma.com/community/plugin/1665050072562427069/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ufhouck/tokensqueezer-mcp.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node dist/mcp-bridge.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.4.3"
+  }
+}
